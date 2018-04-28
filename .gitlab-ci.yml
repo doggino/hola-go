@@ -1,8 +1,6 @@
-# This file is a template, and might need editing before it works on your project.
 image: golang:latest
 
 variables:
-  # Please edit to your GitLab project
   REPO_NAME: gitlab.com/x0rir1co/holla-go
 
 # The problem is that to be able to use go get, one needs to put
@@ -18,7 +16,7 @@ before_script:
 
 stages:
     - test
-#    - build
+    - build
 
 format:
     stage: test
@@ -34,3 +32,4 @@ compile:
     artifacts:
       paths:
         - mybinary
+
