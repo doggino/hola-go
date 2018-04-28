@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// Serve serves the hello-world REST API
 func Serve() {
 	fmt.Println("running...")
 	http.Handle("/hola", http.HandlerFunc(handleRequest))
